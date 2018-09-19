@@ -1,0 +1,308 @@
+﻿html {
+    font-family: Verdana, sans-serif;
+}
+
+#navlist {
+    position: fixed;
+    width: 100%;
+    list-style-type: none;
+    margin: -26px -8px 0px -8px;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    z-index: 2;
+}
+
+#header-img {
+    max-width: 100px;
+    height: auto;
+    margin: -20px 0px -90px -8px;
+    z-index: 3;
+}
+
+.nav-link {
+    float: right;
+    background-color: black;
+    display: block;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+    font-size: 60px;
+    style: none;
+    color: #CECECE;
+}
+
+#main {
+    display: flex;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.email-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.col-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 50px 15px 30px 15px;
+    padding: 16px;
+    background-color: white;
+}
+
+.colheader {
+    display: flex;
+    flex: 1;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 16px 60px 16px;
+    text-align: justify;
+    z-index: 1;
+}
+.colfooter {
+    flex: 1;
+    display: flex;
+    text-align: justify;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+#VideoDiv {
+    position: relative;
+    padding-bottom: 39.4%;
+    height: 0;
+    width: 70%;
+    margin: 0 auto;
+}
+
+    #VideoDiv > iframe {
+        border: 0;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+#SectionHeader {
+    font-size: 3.5em;
+}
+
+.PriceBody {
+    padding: 10px 0px 10px 0px;
+}
+
+#ProductPrice {
+    width: 100%;
+}
+#Price{
+    margin-top: 100px;
+}
+#Order{
+    margin-top: 100px;
+}
+
+#Price1 {
+    border-radius: 15px 15px 15px 15px;
+    width: 400px;
+    margin: 0% 1.5% 0% 1.5%;
+}
+
+#Price2 {
+    border-radius: 15px 15px 15px 15px;
+    width: 400px;
+    margin: 0% 1.5% 0% 1.5%;
+}
+
+#Price3 {
+    border-radius: 15px 15px 15px 15px;
+    width: 400px;
+    margin: 0% 1.5% 0% 1.5%;
+}
+
+.PriceList {
+    line-height: 1.8;
+    list-style: none;
+    font-size: 1.5em;
+}
+
+.HeadPriceText {
+    font-size: 2.5em;
+    margin: 10px 0px 10px 0px;
+}
+
+.FootPriceText {
+    font-size: 2.5em;
+    margin: 10px 0px 10px 0px;
+}
+
+#Price1:hover, #Price2:hover, #Price3:hover {
+    transform: scale(1.1,1.1);
+}
+
+#Order {
+    width: 100%;
+}
+
+#email {
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 1.5em;
+}
+
+#submit {
+    width: 130px;
+    height: 45px;
+    margin: 0px 10px 0px 10px;
+    border-radius: 5px;
+    border: 1px solid #F7E8DD;
+    background-color: #66ccff;
+    font-size: 1.5em;
+}
+
+@media (max-width: 1200px) {
+
+    .col-container {
+        margin: 0px -24px 0px -24px;
+    }
+
+    .colheader {
+        margin-left: 100px;
+        margin-right: 100px;
+        text-align: center;
+    }
+
+    .colfooter {
+        margin-left: 100px;
+        margin-right: 100px;
+        text-align: center;
+    }
+
+    #HPriceText, #FPriceText {
+        font-size: 1.5em;
+    }
+
+    #PriceList {
+        font-size: 1.05em;
+    }
+
+    #main {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 900px) {
+    .col-container {
+        margin-top: 0px;
+    }
+
+    .price-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -30px;
+    }
+
+    #main {
+        margin-top: 200px;
+    }
+
+    #Price1, #Price2, #Price3 {
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #navlist {
+        display: flex;
+        flex-direction: column;
+        margin-top: -200px;
+    }
+
+    li {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.3em;
+        width: 100%;
+    }
+
+    #header {
+        margin-top: 26px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .email-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    #SectionHeader {
+        font-size: 1.5em;
+    }
+
+    #SubHeader {
+        font-size: 1.5em;
+    }
+
+    #email {
+        width: 99.5%;
+    }
+
+    #submit {
+        width: 100%;
+        margin: 10px 0px 0px 0px;
+    }
+
+    #Price1:hover, #Price2:hover, #Price3:hover {
+        transform: scale(1.0,1.0);
+    }
+
+    .colheader {
+        margin: 0px 20px 0px 20px;
+    }
+
+    .colfooter {
+        margin: 0px 20px 0px 20px;
+    }
+}
+    @media (max-width: 500px) {
+        #Price1, #Price2, #Price3 {
+            width: 85%;
+            font-size: .9em;
+        }
+    }
+
+        @media (max-width: 400px) {
+            #Price1, #Price2, #Price3 {
+                font-size: .7em;
+            }
+        }
+    
+
